@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../resources/CSS/style.css">
+
+    <title>Curso Online</title>
+  </head>
+  <body>
+    
+    
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                     <a class="navbar-brand" href="#"><img src="../resources/img/dowload.jpg" alt="" width="50" height="50"></a>
+                  <a class="navbar-brand" href="#">QualitCoaching</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#code">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Cursos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Eng.Software</a></li>
+                          <li><a class="dropdown-item" href="#">Medicina</a></li>
+                          <li><a class="dropdown-item" href="#">Eng.Informatica</a></li>
+                          <li><a class="dropdown-item" href="#">Financas</a></li>
+                          <li><a class="dropdown-item" href="#">Psicologia</a></li>
+                          <li><a class="dropdown-item" href="#">Eng.Computacao</a></li>
+                          <li><a class="dropdown-item" href="#">Data Science</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#menu">Clique aqui para mais cursos</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#recursos">Inspire-se</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#fofa">Contactos</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+                   <!--caroussel-->  
+                   <div class="top-content">
+                   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="1600">
+                        <img src="../resources/img/code/curso-tecnologia-mulheres.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3 >QualitCoaching</h3>
+                          <p>.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/code/mulheres-na-TI.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>QualitCoaching</h5>
+                          <p>Aprenda rapido, aprenda aqui!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/mulheres.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>QualitCoaching</h3>
+                          <p>Aprenda rapido, aprenda aqui!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/code/18280-mulherTI-770x499.png" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>QualitCoaching</h3>
+                          <p>Aprenda rapido, aprenda aqui!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/code/Fernanda-Solis-1000x450.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>QualitCoaching</h3>
+                          <p>Aprenda rapido, aprenda aqui!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/code/Imagem_FernandaSolis-scaled.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>QualitCoaching</h3>
+                          <p>Aprenda rapido, aprenda aqui!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/IMG-20220709-WA0099.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>QualitCoaching</h3>
+                          <p>Aprenda rapido, aprenda aqui!</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1600">
+                        <img src="../img/code/IMG-20220709-WA0085.jpg" class="d-block w-100" width="550px" height="550px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>QualitCoaching</h5>
+                          <p>Aprenda rapido, aprenda aqui!.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  </div>
+        </header>
+        <section>
+            <!--Sobre nos-->
+              
+      <div id="sobre">
+      <div class="container">
+          <div class="row gy-4 align-items-center">
+          <div class="col-lg-5">
+              <img src="../img/mulheres.jpg" width=100% alt="">
+          </div>
+
+          <div class="col-lg-5">
+              
+              <div class="divider my-5">
+                <h1>QualitCoaching</h1>
+              <p>A <b>QualiCoaching</b> e uma organizacao sem fins lucrativos que se dedica a oferecer cursos para ingressar numa carreira profissional.
+            </p>
+              <p> A organizacao convida atraves de medias, toda populacao Mocambicana  que tenham interesse em aprender e aumentar o seu conhecimento!</p>
+              <p>A  QualiCoaching tem como parcerias: <b>CodeLikeaGirl_MZ, Code.Org, Made W/Code-Google, Code girl, e Eu posso programar,MINED. </b></p>
+              <p>Esta iniciativa visa aumentar consideravelmente aumentar o indice de estudantes em Mocambique.</p>
+              <a style="color:rgb(207, 82, 82)"; ="#" class="btn1 btn-brand">Explore os nossos cursos!</a>
+          </div>
+          </div>
+        </div>
+<!--menu cursos-->
+        <section id="menu" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 intro-text">
+                        <h1><center>Cursos disponiveis</center></h1>
+                        <p style="color:black;"><center>Escolha o curso que deseja fazer!!!</center></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                  
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-cursos-tab" data-bs-toggle="pill" data-bs-target="#pills-cursos" type="button" role="tab" aria-controls="pills-cursos" aria-selected="true">Cursos</button>
+                  </li>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-cursos" role="tabpanel" aria-labelledby="pills-cursos-tab" tabindex="0">
+                        
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../img/code/java.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Java</h5>
+                      <p class="card-text">Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation. Wikipédia.</p>
+                      <a href="cadastro.html">Comece ja</a>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Aprenda rapido, aprenda aqui!</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../img/code/php1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Php</h5>
+                      <p class="card-text">PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. Wikipédia.</p>
+                      <a href="cadastro1.html">Comece ja</a>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Aprenda rapido, aprenda aqui!</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../resources/img/images.jpg" class="card-img-top" height="200px" width="200px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Introducao ao Desenvolvimento Web</h5>
+                      <p class="card-text">Desenvolvimento web é o termo utilizado para descrever o desenvolvimento de sites, na Internet ou numa intranet. O profissional que trabalha desenvolvendo websites pode ser um web designer ou um web developer.</p>
+                      <a href="cadastro2.html">Comece ja</a>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Aprenda rapido, aprenda aqui!</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+              <img src="../img/code/cA.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Economia</h5>
+                <p class="card-text">Economia procura formar quadros polivalentes, com conhecimentos em áreas vitais para o desenvolvimento do país, como a economia agrária, industrial, monetária ou internacional. </p>
+                <a href="cadastro3.html">Comece Ja!</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Aprenda rapido, aprenda aqui!</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../resources/pix/img/girl1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Contabilidade</h5>
+                <p class="card-text">A Contabilidade é a ciência que mede a realidade econômica de uma organização a fim de permitir o planejamento e controle adequados de entidades econômicas.Trata-se de um ramo do conhecimento cujos fundamentos e objetivos giram em torno da obtenção de medidas quantitativas </p>
+                <a href="cadastro4.html">Comece ja!</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Aprenda rapido, aprenda aqui!</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../img/code/c++.svg" class="card-img-top" height="200px" width="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">C++</h5>
+                <p class="card-text">C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.</p>
+                <a href="cadastro5.html">Comece ja</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Aprenda rapido, aprenda aqui!</small>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+    </section>
+    <br>
+    <div>
+         <!--recursos-->
+         <section id="recursos">
+            <div class="container">
+              <div class="row">
+              <div class="col-12 intro-text">
+                <h1 class="text-white"><center>Inspire-se</center></h1>
+                <p class="text-white"></p>
+    
+              </div>
+              </div>
+              <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="recursos py-4 px-4">
+                  <div class="recursos-icon">
+                    <img src="../img/code/4-mulheres-programacao-ada.jpg" width="100px" height="100px">
+                  </div>
+                  <h4 class="text-white mt-4 mb-2 text-center">Ada Lovelace</h4>
+                  <p class="text-white">Ela é considerada a fundadora da ciência da computação, assim como a primeira programadora do mundo.</p>
+                  <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace">Ler mais</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="recursos py-4 px-4">
+                  <div class="recursos-icon">
+                    <img src="../resources/img/code/4-mulheres-programacao-margaret.jpg" width="100px" height="100px">
+                  </div>
+                  <h4 class="text-white mt-4 mb-2 text-center">Margaret Hamilton</h4>
+                  <p class="text-white">Ajudou a nasa na codificacao a chegar a lua e fez o primeiro computador portátil de história.</p>
+                  <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)">Ler mais</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="recursos py-4 px-4">
+                  <div class="recursos-icon">
+                    <img src="../resources/img/code/4-mulheres-programacao-grace.jpg" width="100px" height="100px">
+                  </div>
+                  <h4 class="text-white mt-4 mb-2 text-center">Grace Hopper</h4>
+                  <p class="text-white"> A almirante Grace Murray Hopper desenvolveu linguagens de programação acessíveis, que usavam palavras e não números para funcionar.</p>
+                  <a href="https://pt.wikipedia.org/wiki/Grace_Hopper">Ler mais</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="recursos py-4 px-4">
+                  <div class="recursos-icon">
+                    <img src="../img/code/4-mulheres-programacao-joan.jpg" width="100px" height="100px">
+                  </div>
+                  <h4 class="text-white mt-4 mb-2 text-center">Joan Clarke</h4>
+                  <p class="text-white"> Joan Clark os  primeiros computadores do mundo, que tinham como objetivo desvendar as mensagens criptografadas pela famosa máquina Enigma, pertencente aos alemães.</p>
+                  <a href="https://en.wikipedia.org/wiki/Joan_Clarke">Ler mais</a>
+                  <br>
+                  
+                </div>
+                <br>
+                
+              </div>
+              </div>
+         <a href="https://www.take.net/blog/devs/a-volta-das-mulheres-na-computacao/"><center>Ler mais</center></a>
+        </div>
+              
+
+            </section>
+            
+            
+            <br>
+    
+            <br>
+            
+      </div>  
+    </div>
+        </section>
+        <br>
+        <div>
+
+            <hr style="color:#FFF";>
+            <p><center style="color:purple";><a href="equipa.html">Clique aqui para ver a nossa equipa!!!</a></center></p>
+
+            <hr style="color:#FFF";>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <footer class="bg-cover">
+                <div class="footer-top ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        
+                        <h6 style="color:black;"><b>Parceiros</b></h6>
+                        <p>CodeLikeaGirl_Mz</p>
+                      <p>Code.Org</p>
+                      <p>Code Girls</p>
+                      
+                      <div class="social links"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#E1306C" class="bi bi-instagram" viewBox="0 0 16 16">
+                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="text" />
+                           </svg>
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="blue"/>
+                           </svg>
+                           
+                             <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                               </svg>
+                           
+                             <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#E1306C" class="bi bi-meta" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd" d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z" />
+                               
+            
+            </svg>      
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <h6  class="text-black mb=4 "><b>Sobre</b></h6>
+                      <p class="mb-2">Outros projectos</p>
+                      <p class="mb-2">Carreira</p>
+                      <p class="mb-2">Empoderamento</p>
+                      <div class="social links"> 
+                           </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-black mb=4 "><b>Suporte</b></h6>
+                        <p class="mb-2">Solicitacao de Suporte</p>
+                        <p class="mb-2">FJL suporte</p>
+                        <p class="mb-2">Contactos</p>
+                      </div>
+                
+                </div>
+            </div>
+                </div>
+            
+            <div class="footer-botton">
+                <div class="container">
+                    <div class="row justify-content-content">
+                        <p class="mb-0">All rights reserved 2023</p>
+                    </div>
+                    <div class="row">
+                        <p class="mb-0"><center> Designer By <a style="color:rgb(240, 23, 23)"; href="https://instagram.com/fausiagracieth4?igshid=YmMyMTA2M2T=">Equipe ISD3B_FJL</a></center></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="google_translate_element">
+              <script type="text/javascript">
+                function googleTranslateElementInit(){
+                  new google.translate.TranslateElement(
+                    {pageLanguage:'pt'},
+                    'google_translate_element');
+                  
+                }
+              </script>
+              <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            
+              </script>
+              </div>
+            </footer>
+        </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</div>
+  </body>
+</html>

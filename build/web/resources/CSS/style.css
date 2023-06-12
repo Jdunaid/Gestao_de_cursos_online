@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/06/2023, 16:46:46
+    Author     : LIGIA
+*/
+
+body{
+          background-color: #11c4b5;
+}
+.bg-cover{
+
+background-color: white;
+color:black;
+       }
+.navbar{
+        position: fixed;
+        margin-top: 0px;
+        margin-left: 0;
+        z-index:99;
+        transition: all .5s;
+        width: 100%;
+        height: 90px;
+       
+
+           }
+.form-control {
+    height: 40px;
+     width: 30px;
+     border-radius: 30px;
+     outline: none;
+     margin-right: -65px;
+     font-family: sans-serif;
+     border: 2px solid pink;
+    }   
+    .btn{
+     height: 40px;
+     width: 80px;
+     outline: none;
+     border: none;
+     background: pink;
+     color: white;
+     border-radius: 30px;
+     font-weight: 700;
+    }
+    .btn1{
+     height: 80px;
+     width: 80px;
+     outline: none;
+     border: none;
+     background: pink;
+     color: white;
+     border-radius: 30px;
+     font-weight: 700;
+    }
+      .footer{
+
+        background-color: white;
+        color:black;
+      }
+       .footer .social-links a{
+        font-weight: normal;
+        font-size: 24px;
+        margin-right:10px;
+       }
+       .footer-botton{
+        padding-top: 30px;
+        border-top: 2px solid rgba(255,255,255,0.4);
+       }
+       .footer-top{
+        margin-bottom: 30px;
+       }
+       .nav-link{
+text-align: center;
+       }
+       .top-content{
+        width: 100%;
+        padding: 0;
+
+       }
+       .carousel-item{
+        width:100%;
+
+      }
+      .carousel-indicators{
+        border-radius: 30%;
+        border-bottom: 0 ;
+      }
+      #sobre{
+        background-color: transparent;
+       
+      }
+
+      #sobre.divider{
+       width: 70px;
+        height:10px;
+        display: block;
+          background-color: rgb(247, 37, 37);
+      }
+      /*recursos*/
+      
+
+
+.recursos{
+border:2px solid rgba(255, 255, 255, 0.2);
+
+}
+.recursos .recursos-icon{
+width:80px;
+height:80px;
+background-color:wheat;
+color:black;
+font-size: 28px;
+display: inline-grid;
+align-content: center;
+text-align: center;
+
+}
+
+.content{
+  width: 500px;
+  min-height: 560px;    
+  margin: 0px auto;
+  position:relative;   
+}
+h1{
+  font-size: 48px;
+  color: #066a75;
+  padding: 2px 0 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  
+}
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+p{
+  margin-bottom:15px;
+}
+ 
+.content p:first-child{
+  margin: 0px;
+}
+ 
+label{
+  color: #A3DFFD;
+  position: relative;
+}
+
+
+.link{
+  position: absolute;
+  background: rgb(90, 131, 148);
+  color: white;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #dbe5e8;
+ 
+  
+}
+ 
+
+ 
+#fofa{
+    background-color: #A3DFFD;
+    height: 900px;
+width: 100%;
+padding:0%;
+margin-left: 1px;
+text-align: justify;
+content: normal;
+}
+#fofa h5{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#fofa p{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#fofa a{
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
