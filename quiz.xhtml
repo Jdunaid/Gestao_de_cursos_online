@@ -1,0 +1,132 @@
+<!-- index.xhtml -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Quiz de Escolha de Curso</title>
+     <style>
+        /* Estilos personalizados */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .quiz-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quiz-form h:outputText {
+            font-weight: bold;
+        }
+        
+        .quiz-form p {
+            margin-top: 10px;
+        }
+        
+        .quiz-form p:selectOneButton {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .quiz-form p:commandButton {
+            margin-top: 20px;
+        }
+        
+        .quiz-result {
+            margin-top: 20px;
+            background-color: brown;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .slct {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</h:head>
+<h:body>
+    <h:form styleClass="quiz-form">
+        <p:messages />
+        <h2>Quiz de Escolha de Curso</h2>
+        
+        <h:panelGrid columns="1">
+            <h:outputText value="1. Você gosta de trabalhar com números?" />
+            <p:selectOneButton id="q1" value="#{quizBean.q1Answer}">
+                <f:selectItem itemLabel="Sim" itemValue="sim" />
+                <f:selectItem itemLabel="Não" itemValue="nao" />
+            </p:selectOneButton>
+            
+            <h:outputText value="2. Você prefere ciências exatas ou humanas?" />
+            <p:selectOneButton id="q2" value="#{quizBean.q2Answer}">
+                <f:selectItem itemLabel="Exatas" itemValue="exatas" />
+                <f:selectItem itemLabel="Humanas" itemValue="humanas" />
+            </p:selectOneButton>
+            
+            <h:outputText value="3. Quais verbos representam acções que possivelmente gostaria de desempenhar no ambiente de trabalho??" />
+            <p:selectOneButton id="q3" value="#{quizBean.q3Answer}">
+                <f:selectItem itemLabel="Ensinar" itemValue="ensinar" />
+                <f:selectItem itemLabel="Programar" itemValue="programar" />
+                <f:selectItem itemLabel="Calcular" itemValue="calcular" />
+                <f:selectItem itemLabel="Pesquisar" itemValue="pesquisar" />
+            </p:selectOneButton>
+            
+            
+            <h:outputText value="4. Com qual area mais se interessa?" />
+            <p:selectOneButton id="q4" value="#{quizBean.q4Answer}">
+                <f:selectItem itemLabel="Tecnologia" itemValue="tecnologia" />
+                <f:selectItem itemLabel="Financas" itemValue="financas" class="selct" />
+                <f:selectItem itemLabel="Anatomia" itemValue="anatomia" />
+                <f:selectItem itemLabel="Saude" itemValue="saude" />
+            </p:selectOneButton>
+            
+            
+            <h:outputText value="5. Qual das habilidades abaixo ,você possui e considera que deverá utilizar no ambiente de trabalho futuro?" />
+            <p:selectOneButton id="q5" value="#{quizBean.q5Answer}">
+                <f:selectItem itemLabel="Atencao a detalhes" itemValue="detalhes" />
+                <f:selectItem itemLabel="Resolução de problemas através do raciocínio lógico" itemValue="resolucao" />
+                <f:selectItem itemLabel="Prática de exercícios físicos e cuidados com a saúde" itemValue="exercicios" />
+                <f:selectItem itemLabel="Interação com as pessoas" itemValue="interacao" />
+            </p:selectOneButton>
+            
+             <h:outputText value="6. Qual motivo você considera como sendo o mais importante ao escolher a sua profissão?" />
+            <p:selectOneButton id="q6" value="#{quizBean.q6Answer}">
+                <f:selectItem itemLabel="Ter reconhecimento" itemValue="reconhecimento" />
+                <f:selectItem itemLabel="Ajudar nos avancos tecnologicos" itemValue="avancos" />
+                <f:selectItem itemLabel="Boa remuneracao" itemValue="remuneracao" />
+                <f:selectItem itemLabel="Testar a capacidade" itemValue="teste" />
+            </p:selectOneButton>
+             
+              <h:outputText value="7. Em qual ambiente de trabalho você se sentiria mais à vontade?" />
+            <p:selectOneButton id="q7" value="#{quizBean.q7Answer}">
+                <f:selectItem itemLabel="Escolas ou universidades" itemValue="escolas" />
+                <f:selectItem itemLabel="Agencias de tecnologia" itemValue="agencias" />
+                <f:selectItem itemLabel="Escritorios" itemValue="escritorios" />
+                <f:selectItem itemLabel="Hospitais ou clinicas" itemValue="hospitais" />
+            </p:selectOneButton>
+            
+            <p:commandButton value="Enviar" action="#{quizBean.processAnswers}" update="result" />
+        </h:panelGrid>
+        
+        <p:panel header="Resultado" id="result" styleClass="quiz-result">
+            <h:outputText value="#{quizBean.resultMessage}" rendered="#{not empty quizBean.resultMessage}" />
+        </p:panel>
+        
+   
+    </h:form>
+</h:body>
+</html>
